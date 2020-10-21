@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "2e5ff5ae-9654-4f9c-ab69-7c4d5abc1a79",
+		"name": "ITA_Ej13_SPRING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SHOP",
+			"item": [
+				{
+					"name": "Get all shops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get shop by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/3",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete shop by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/3",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new shop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"name\": \"ShopNEW\",\n        \"capacity\": 5\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update shop",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"ShopUPDT\",\n        \"capacity\": 4\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/2",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PAINT",
+			"item": [
+				{
+					"name": "Get all paints",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/pictures",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"pictures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get paint by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/pictures/3",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"pictures",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get paints by ID Shop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/3/pictures",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"3",
+								"pictures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Paint by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/pictures/2",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"pictures",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE (BURN) Paints by ID Shop",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/2/pictures",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"2",
+								"pictures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new paint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"author\": \"AuthorNEW\",\n    \"name\": \"PaintNEW\",\n    \"price\": 600.0,\n    \"dateEntry\": \"2020-10-18T23:00:00.000+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/2/pictures",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"2",
+								"pictures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update paint",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"author\": \"AuthorUPDT\",\n    \"name\": \"PaintUPDT\",\n    \"price\": 40.0,\n    \"shop\": {\n        \"id\": 1,\n        \"name\": \"Shop1\",\n        \"capacity\": 3\n    },\n    \"dateEntry\": \"2020-10-18T23:00:00.000+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/shops/pictures/1",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shops",
+								"pictures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
