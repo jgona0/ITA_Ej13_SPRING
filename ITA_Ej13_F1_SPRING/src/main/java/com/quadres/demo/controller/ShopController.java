@@ -61,7 +61,7 @@ public class ShopController {
 		
 		// asignamos la actualización y retornamos el objeto actualizado
 		shop =  shopServiceImpl.updateShop(shop_to_updt);
-		System.out.println("Por el employee: " +shop);
+		System.out.println("Por la shop: " +shop);
 		
 		return shop;
 
