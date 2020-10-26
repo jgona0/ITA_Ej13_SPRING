@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 
 
-// Clase para gestionar las excepciones que se pueden producir a la hora de ejecutar el programa. Seleccionar, borrar, crear employees, etc.
+// Clase para gestionar las excepciones que se pueden producir a la hora de ejecutar el programa. Seleccionar, borrar, crear shop, paints etc.
 @ControllerAdvice
 public class HandlerException {
 
